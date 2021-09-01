@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tic.css">
+</head>
+<body>
+    <section>
+        <h3>Tic Tac Toe Game</h3>
+        <div>
+            
+        </div>
+    <input ype="text" id="myFirstInput" maxlength="1">
+    <input type="text" id="mySecondInput" maxlength="1">
+    <button onclick="setButton()">Set</button>
+    <table border="1" width=150px height=150px  class="sectionn" style="color: white">
+
+        <tr>
+            <td onclick="myFunc(event)"  id="row1"></td>
+            <td onclick="myFunc(event)" id="row2"></td>
+            <td onclick="myFunc(event)" id="row3"></td>
+        </tr>
+
+        <tr>                        
+            <td onclick="myFunc(event)" id="row4"></td>
+            <td onclick="myFunc(event)" id="row5"></td>
+            <td onclick="myFunc(event)" id="row6"></td>
+        </tr>
+
+         <tr>
+            <td onclick="myFunc(event)" id="row7"></td>
+            <td onclick="myFunc(event)" id="row8"></td>
+            <td onclick="myFunc(event)" id="row9"></td>
+        </tr>
+        
+    </table>
+    
+</section>
+<br>
+player 1<button id="myFirstPlayer">0</button>-<button id="mySecondPlayer">0</button>player 2
+<div>
+    my name is ajenikoko
+</div>
+
+    
+    <script type="text/javascript" >
+    let first= 0;
+    let inputOne = 0;
+    let inputTwo = 0;
+    let firstInput;
+    let secondInput;
+    
+    const setButton = () => {
+        firstInput = myFirstInput.value;
+        secondInput= mySecondInput.value
+        // console.log(firstInput)
+    }
+    
+    const myFunc =(e) => {
+        if ((row1.innerHTML == firstInput && row2.innerHTML == firstInput && row3.innerHTML == firstInput) || (row4.innerHTML == firstInput && row5.innerHTML == firstInput && row6.innerHTML == firstInput) || (row7.innerHTML == firstInput && row8.innerHTML == firstInput && row9.innerHTML == firstInput)
+        || (row3.innerHTML == firstInput && row6.innerHTML == firstInput && row9.innerHTML == firstInput)|| (row1.innerHTML == firstInput && row5.innerHTML == firstInput && row9.innerHTML == firstInput)|| (row2.innerHTML == firstInput && row5.innerHTML == firstInput && row8.innerHTML == firstInput)|| (row4.innerHTML == firstInput && row5.innerHTML == firstInput && row6.innerHTML == firstInput)|| (row7.innerHTML == firstInput && row8.innerHTML == firstInput && row9.innerHTML == firstInput)|| (row1.innerHTML == firstInput && row4.innerHTML == firstInput && row7.innerHTML == firstInput)|| (row3.innerHTML == firstInput && row5.innerHTML == firstInput && row7.innerHTML == firstInput)) {
+            inputOne++;
+            myFirstPlayer.innerHTML = inputOne;
+        } 
+        else if ((row1.innerHTML == secondInput && row2.innerHTML == secondInput && row3.innerHTML == secondInput) || (row4.innerHTML == secondInput && row5.innerHTML == secondInput && row6.innerHTML == secondInput) || (row7.innerHTML == secondInput && row8.innerHTML == secondInput && row9.innerHTML == secondInput)
+        || (row3.innerHTML == secondInput && row6.innerHTML == secondInput && row9.innerHTML == secondInput)|| (row1.innerHTML == secondInput && row5.innerHTML == secondInput && row9.innerHTML == secondInput)|| (row2.innerHTML == secondInput && row5.innerHTML == secondInput && row8.innerHTML == secondInput)|| (row4.innerHTML == secondInput && row5.innerHTML == secondInput && row6.innerHTML == secondInput)|| (row7.innerHTML == secondInput && row8.innerHTML == secondInput && row9.innerHTML == secondInput)|| (row1.innerHTML == secondInput && row4.innerHTML == secondInput && row7.innerHTML == secondInput)|| (row3.innerHTML == secondInput && row5.innerHTML == secondInput && row7.innerHTML == secondInput)) {
+            inputTwo++;
+            mySecondPlayer.innerHTML = inputTwo;
+        }
+        else if ( firstInput != "" && secondInput != "" && (first == 0 || first != secondInput) && event.target.innerHTML === "") {    
+            first = firstInput;
+            event.target.innerHTML= first;
+            first = secondInput;
+        } 
+        else if ( firstInput != "" && secondInput != "" && (first == 0 || first != firstInput) && event.target.innerHTML === "") {
+            
+            event.target.innerHTML= secondInput;
+            first = firstInput
+        }  
+    } 
+
+
+
+    </script>
+</body>
+</html>

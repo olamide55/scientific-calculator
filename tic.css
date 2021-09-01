@@ -1,0 +1,82 @@
+section{
+    text-align: center;
+}
+
+#myFirstInput{
+    background-color: cornsilk;
+}
+#mySecondInput{
+    background-color: cornsilk;
+}
+
+.sectionn{
+    border: 10px solid teal;
+    padding: 10px;
+    border-radius: 40px; 
+    width: 150px;
+    height: 170px;
+
+}
+
+#row1{
+    background-color: red;
+    border-radius: 20px;
+    width: 45px;
+    height: 25px;
+
+}
+#row2{
+    background-color: teal;
+    border-radius: 20px;
+    width: 45px;
+    height: 25px;
+}
+
+#row3{
+    background-color: red;
+    border-radius: 20px;
+    width: 45px;
+    height: 25px;
+}
+
+#row4{
+    background-color: teal;
+    border-radius: 20px;
+    width: 45px;
+    height: 25px;
+}
+
+#row5{
+    background-color: red;
+    border-radius: 20px;
+    width: 45px;
+    height: 25px;
+}
+
+#row6{
+    background-color: teal;
+    border-radius: 20px;
+    width: 45px;
+    height: 25px;
+}
+
+#row7{
+    background-color: teal;
+    border-radius: 20px;
+    width: 45px;
+    height: 25px;
+}
+
+#row8{
+    background-color: red;
+    border-radius: 20px;
+    width: 45px;
+    height: 25px;
+}
+
+#row9{
+    background-color: teal;
+    border-radius: 20px;
+    width: 45px;
+    height: 25px;
+}
