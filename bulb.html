@@ -4,82 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        button{
-            padding: 10px; margin: 60px; background-color: red ;
-        }
-    </style>
-</head>
-<body>
-    <!-- <img id="bulb" src="off.png" alt="">
+    <title>Light Bulb</title>
+    <center>
+		<style>
+			button{
+				background-color: red;
+				color: black;
+				width:50px;
+				height:50px;
+				margin-top:50px;
+				
+			}
+			
+		</style>
+		<img  src="off.png" id="pic" >
+		<div>			
+		<button onclick="onTouch()" id="button">OFF</button>
+		</div>
+
+		<script type="text/javascript">
+			var bulb  = button;
+		
+
+			function onTouch() {
+				
+				if (bulb.innerText == "ON") {
+					pic.src= "off.png"
+					button.innerText = "OFF"
+				} else {
+					pic.src = "on.png"
+					button.innerText = "ON"
+				}
+			}
+
+		</script>
+        </center>
+
+
     
-    <button onclick="light()"> Turn ON </button>
-    <button onclick="light(0)"> Turn OFF </button> -->
-
     
+         
 
-<img id="bulb" src="off.png" alt="">
-    <button onclick="light()" id="btn"> Turn on</button>
-    <!-- <button onclick="light()"> Turn OFF </button> -->
-
-    <script type="text/javascript">
-        
-    const light =(a)=>{
-        var pic=document
-        if (a == 0){
-            pic="off.png";
-            btn.innerText = "Turn on"
-        }
-        else {
-            pic="on.png";
-        // bulb.src="on.png";
-         document.getElementById("bulb").src=pic
-        //  btn.innerText = "Turn on"
-    }
-}
-        
-        
-    // function light (a)
-    // {
-    //     var pic; 
-    //     if (a == 0)
-        
-    // {
-    // pic="off.png";
-    // }
-    //     else 
-    //     {
-
-    //         ="on.png";
-    //     }
-
-
-    //     // bulb.src="on.png";
-    //      document.getElementById("bulb").src=pic
-    // }
-
-
-
-//     <img id="bulb" src="off.png" alt="">
-//     <button onclick="light()" id="btn"> Turn On</button>
-//     <!-- <button onclick="light()"> Turn OFF </button> -->
-
-//     <script type="text/javascript">
-        
-//     const light =(a)=>{
-//         var pic=document
-//         if (a == 0){
-//             pic="off.png";
-//             btn.innerText = "Turn on"
-//         }
-//         else {
-//             pic="on.png";
-//         // bulb.src="on.png";
-//          document.getElementById("bulb").src=pic
-//         //  btn.innerText = "Turn on"
-//     }
-// }
     </script>
 </body>
 </html>
